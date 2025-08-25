@@ -4,44 +4,74 @@
 }
 
 .navbar {
-  background-color: gold;
+  background: gold;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar .content {
-  padding: 15px;
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+  align-items: center;
+}
+
+.navbar .content .left-section p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #2c3e50;
+}
+
+.center {
+  display: flex;
+  align-items: center;
 }
 
 .navbar .content .center input {
   padding: 10px;
-  width: 500px;
+  width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-btn {
+  padding: 10px 15px;
   border: none;
+  background: #2c3e50;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.navbar .content .left-section p {
-  margin-left: 10px;
-  font-size: 18px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.search-btn:hover {
+  background: #34495e;
 }
 
-.right-section {
-  margin-right: 10px;
-}
-
-ul {
+.right-section ul {
   list-style-type: none;
   display: flex;
+  gap: 20px;
 }
 
-li a {
-  color: black;
+.right-section ul li a {
+  color: #2c3e50;
   text-decoration: none;
-  padding: 10px;
-  font-size: 18px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+.right-section ul li a:hover {
+  background: #2c3e50;
+  color: gold;
 }
 
 .slider {
