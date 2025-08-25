@@ -77,28 +77,35 @@ li a {
 .slider .next {
   right: 10px;
 }
-
-.categories-container {
+.categories {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  background-color: aqua;
-  padding: 20px;
-  width: 80%;
-  margin: 0 auto;
-  box-sizing: border-box;
+  gap: 30px;
+  margin: 40px auto;
+  flex-wrap: wrap;
 }
 
 .category {
-  flex: 0 0 calc((100% / 4) - 10px);
-  background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
 }
 
 .category img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.category p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.category img:hover {
+  transform: scale(1.1);
+  border: 2px solid gold;
 }
